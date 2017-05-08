@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
-var uri = 'mongodb://localhost:27017/todo';
+//var uri = 'mongodb://localhost:27017/todo';
 
-var db = mongoose.createConnection(uri);
+var db = mongoose.connection;
 
 var mySchema = Schema({
     name: String,
