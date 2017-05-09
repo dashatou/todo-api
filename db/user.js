@@ -1,7 +1,6 @@
 var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
-//var uri = 'mongodb://localhost:27017/todo';
 
 var db = mongoose.connection;
 
@@ -10,5 +9,4 @@ var mySchema = Schema({
     password: String
 });
 
-/* global db */
 module.exports = db.model('User', mySchema);
